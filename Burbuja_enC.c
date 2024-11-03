@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h> 
 
 void burbuja(int lista[], int n) {
     for (int i = 0; i < n; i++) { 
@@ -13,9 +14,19 @@ void burbuja(int lista[], int n) {
 }
 
 int main() {
-    int lista[] = {64, 34, 25, 12, 22, 11, 90, 17}; 
-    int n = sizeof(lista) / sizeof(lista[0]); 
+    int n;
+    printf("¿Cuántos números quieres ingresar? ");
+    scanf("%d", &n); 
 
+    if (n <= 0) {
+        printf("Por favor, ingresa un número mayor que 0.\n");
+        return 1; 
+    }
+    int *lista = (int *)malloc(n * sizeof(int)); 
+    for (int i = 0; i < n; i++) {
+        printf("Ingresa el número en la posición %d: ", i + 1);
+        scanf("%d", &lista[i]); 
+    }
     printf("Lista original: ");
     for (int i = 0; i < n; i++) {
         printf("%d ", lista[i]); 
@@ -23,11 +34,12 @@ int main() {
     printf("\n");
 
     burbuja(lista, n); 
+
     printf("Lista ordenada: ");
     for (int i = 0; i < n; i++) {
         printf("%d ", lista[i]); 
     }
     printf("\n");
-
+    free(lista);
     return 0; 
 }
