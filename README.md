@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-<img src="[https://i.imgur.com/tu-imagen.jpg](https://imgur.com/xOn3TKn)" alt="Ordenamiento Burbuja" width="800"/>
+<img src="https://imgur.com/xOn3TKn" alt="Ordenamiento Burbuja" width="800"/>
   
 > Antes de usar este repositorio, asegúrate de entender el **[algoritmo de ordenamiento burbuja.](#-que-es-el-algoritmo-de-ordenamiento-burbuja)** 
 </p>
