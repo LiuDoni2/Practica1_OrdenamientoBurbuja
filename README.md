@@ -11,6 +11,10 @@
 <a href="#"><img title="Ordenamiento Burbuja" src="https://img.shields.io/badge/Lee+todo+el+README-red?colorA=%F77F48FF&colorB=%F77F48FF&style=for-the-badge"></a> 
 </p>
 
+<p align="center">
+<img src="https://i.imgur.com/xOn3TKn.gif" alt="Animación del Algoritmo de Ordenamiento Burbuja" width="600"/>
+</p>
+
 ### 📍 Atajos del README
 | TEMA | DESCRIPCIÓN | ATAJO |
 |------|-------------|-------|
