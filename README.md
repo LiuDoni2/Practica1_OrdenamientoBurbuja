@@ -24,8 +24,20 @@
 ----
 
 ## ❓ ¿Qué es el Algoritmo de Ordenamiento Burbuja?
+El Algoritmo de Ordenamiento Burbuja, conocido como **Bubble Sort**, es un método sencillo y directo para organizar elementos en una lista. Su objetivo principal es ordenar números (o cualquier tipo de datos) en un orden específico, generalmente de menor a mayor.
 
-El **algoritmo de ordenamiento burbuja** es un método sencillo para ordenar una lista de elementos. Funciona comparando elementos adyacentes y, si están en el orden incorrecto, los intercambia. Este proceso se repite hasta que no se requieren más intercambios, lo que indica que la lista está ordenada. Aunque es fácil de entender, no es el más eficiente para listas grandes.
+*¿Cómo funciona?*
+
+La idea básica detrás del algoritmo es comparar elementos adyacentes en la lista. Si el primer elemento es mayor que el segundo, se intercambian. Este proceso se repite a lo largo de toda la lista. Con cada pasada por la lista, el elemento más grande "flota" hacia el final, como una burbuja en el agua.
+
+*Pasos clave del algoritmo:*
+**Comparación**: Se comparan dos elementos adyacentes.
+**Intercambio**: Si están en el orden incorrecto, se intercambian.
+**Repetición**: Este proceso se repite hasta que no se necesiten más intercambios, indicando que la lista está ordenada.
+
+*Características*:
+**Simplicidad**: Es fácil de entender e implementar, lo que lo hace ideal para enseñar conceptos básicos de ordenamiento.
+**Eficiencia**: No es el algoritmo más eficiente para listas grandes, ya que su tiempo de ejecución es relativamente alto en comparación con otros métodos de ordenamiento más avanzados.
 
 ## 💻 Implementaciones en Diferentes Lenguajes
 
