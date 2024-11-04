@@ -31,11 +31,13 @@ El Algoritmo de Ordenamiento Burbuja, conocido como **Bubble Sort**, es un méto
 La idea básica detrás del algoritmo es comparar elementos adyacentes en la lista. Si el primer elemento es mayor que el segundo, se intercambian. Este proceso se repite a lo largo de toda la lista. Con cada pasada por la lista, el elemento más grande "flota" hacia el final, como una burbuja en el agua.
 
 *Pasos clave del algoritmo:*
+
 **Comparación**: Se comparan dos elementos adyacentes.
 **Intercambio**: Si están en el orden incorrecto, se intercambian.
 **Repetición**: Este proceso se repite hasta que no se necesiten más intercambios, indicando que la lista está ordenada.
 
-*Características*:
+*Características:*
+
 **Simplicidad**: Es fácil de entender e implementar, lo que lo hace ideal para enseñar conceptos básicos de ordenamiento.
 **Eficiencia**: No es el algoritmo más eficiente para listas grandes, ya que su tiempo de ejecución es relativamente alto en comparación con otros métodos de ordenamiento más avanzados.
 
