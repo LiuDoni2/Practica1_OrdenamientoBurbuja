@@ -6,14 +6,6 @@
 <img src="https://i.imgur.com/xOn3TKn.gif" alt="Animación del Algoritmo de Ordenamiento Burbuja" width="600"/>
 </p>
 
-<p align="center">
-<strong>Gráficamente</strong>
-</p>
-
-<p align="center">
-<img src="https://i.imgur.com/iIkvbtg.gif" alt="GIF Gráfico del Algoritmo" width="600"/>
-</p>
-
 ### 📍 Atajos del README
 | TEMA | DESCRIPCIÓN | ATAJO |
 |------|-------------|-------|
@@ -266,3 +258,6 @@ El Algoritmo de Ordenamiento Burbuja es un método sencillo y educativo para ent
 
 Aprender y entender el Algoritmo de Ordenamiento Burbuja es un primer paso esencial en el camino hacia el dominio de la programación y la resolución de problemas. A medida que los programadores avanzan, pueden explorar algoritmos más eficientes y técnicas de programación más complejas, pero la simplicidad del algoritmo de burbuja siempre servirá como una buena base sobre la cual construir.
 
+<p align="center">
+<img src="https://i.imgur.com/iIkvbtg.gif" alt="GIF Gráfico del Algoritmo" width="600"/>
+</p>
