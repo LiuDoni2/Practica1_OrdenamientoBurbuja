@@ -32,14 +32,14 @@ La idea básica detrás del algoritmo es comparar elementos adyacentes en la lis
 
 *Pasos clave del algoritmo:*
 
-**Comparación**: Se comparan dos elementos adyacentes.
-**Intercambio**: Si están en el orden incorrecto, se intercambian.
-**Repetición**: Este proceso se repite hasta que no se necesiten más intercambios, indicando que la lista está ordenada.
+- **Comparación**: Se comparan dos elementos adyacentes.
+- **Intercambio**: Si están en el orden incorrecto, se intercambian.
+- **Repetición**: Este proceso se repite hasta que no se necesiten más intercambios, indicando que la lista está ordenada.
 
 *Características:*
 
-**Simplicidad**: Es fácil de entender e implementar, lo que lo hace ideal para enseñar conceptos básicos de ordenamiento.
-**Eficiencia**: No es el algoritmo más eficiente para listas grandes, ya que su tiempo de ejecución es relativamente alto en comparación con otros métodos de ordenamiento más avanzados.
+- **Simplicidad**: Es fácil de entender e implementar, lo que lo hace ideal para enseñar conceptos básicos de ordenamiento.
+- **Eficiencia**: No es el algoritmo más eficiente para listas grandes, ya que su tiempo de ejecución es relativamente alto en comparación con otros métodos de ordenamiento más avanzados.
 
 ## 💻 Implementaciones en Diferentes Lenguajes
 
