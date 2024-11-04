@@ -11,9 +11,7 @@
 </p>
 
 <p align="center">
-<video width="600" controls>
-    <source src="https://i.imgur.com/riDqF7F.mp4" type="video/mp4">
-</video>
+<img src="https://i.imgur.com/iIkvbtg.gif" alt="GIF Gráfico del Algoritmo" width="600"/>
 </p>
 
 ### 📍 Atajos del README
