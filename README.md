@@ -45,8 +45,52 @@ La idea básica detrás del algoritmo es comparar elementos adyacentes en la lis
 
 ### C++
 
-- **Particularidad**: Utiliza `std::vector`, lo que permite manejar listas dinámicas sin preocuparse por la gestión de memoria manual.
-- **Curiosidad**: La función `swap` de C++ simplifica el intercambio de elementos, y la sobrecarga de operadores permite una sintaxis más intuitiva.
+## Puntos Importantes del Código
+
+1. **Uso de Bibliotecas:**
+   - `#include <iostream>` permite la entrada y salida estándar.
+   - `#include <vector>` utiliza la clase `vector`, que permite crear arreglos dinámicos de tamaño variable.
+
+2. **Función `burbuja`:**
+   - La función `burbuja` recibe un vector de enteros por referencia, lo que permite modificar el vector original sin hacer copias innecesarias.
+   - Utiliza dos bucles anidados para implementar el algoritmo de ordenamiento burbuja:
+     - El primer bucle controla las pasadas.
+     - El segundo bucle compara elementos adyacentes y los intercambia si están en el orden incorrecto.
+
+3. **Intercambio de Elementos:**
+   - Utiliza la función `swap` para intercambiar elementos, lo que simplifica el código y mejora la legibilidad.
+
+4. **Entrada del Usuario:**
+   - Se pide al usuario que ingrese la cantidad de números y los números en sí. Incluye una validación para asegurarse de que el número de entradas sea positivo.
+
+5. **Visualización:**
+   - Imprime la lista original y la lista ordenada para que el usuario pueda ver el resultado del ordenamiento.
+
+## Características del Código
+
+- **Simplicidad:** 
+  - El algoritmo y su implementación son fáciles de entender, lo que lo hace ideal para principiantes.
+  
+- **Estructura:** 
+  - La separación entre la función de ordenamiento y la función principal (`main`) promueve la claridad y la organización del código.
+
+- **Eficiencia:**
+  - Aunque el Algoritmo de Ordenamiento Burbuja es simple, no es el más eficiente para listas grandes, ya que su complejidad temporal es O(n²) en el peor de los casos.
+
+## Peculiaridades
+
+- **Uso de `vector`:**
+  - En lugar de usar arreglos estáticos, el uso de `vector` permite manejar un número variable de elementos sin preocuparse por el tamaño inicial.
+
+- **Interacción con el Usuario:**
+  - La implementación incluye interacciones básicas, como solicitudes de entrada y mensajes, lo que mejora la experiencia del usuario.
+
+- **Manejo de Errores:**
+  - Se incluye una simple validación para asegurar que el usuario ingrese un número positivo, lo que mejora la robustez del programa.
+
+## Forma 
+
+La estructura del código en C++ se basa en sus características de programación orientada a objetos y su capacidad para manejar datos dinámicamente a través de clases como `vector`. La sintaxis de C++ permite el uso de funciones como `swap` para facilitar tareas comunes. La claridad y organización del código son fundamentales en C++, especialmente cuando se trabaja en proyectos más grandes o en equipos.
 
 ### C
 
