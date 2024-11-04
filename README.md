@@ -6,6 +6,16 @@
 <img src="https://i.imgur.com/xOn3TKn.gif" alt="Animación del Algoritmo de Ordenamiento Burbuja" width="600"/>
 </p>
 
+<p align="center">
+<strong>Gráficamente</strong>
+</p>
+
+<p align="center">
+<video width="600" controls>
+    <source src="https://i.imgur.com/riDqF7F.mp4" type="video/mp4">
+</video>
+</p>
+
 ### 📍 Atajos del README
 | TEMA | DESCRIPCIÓN | ATAJO |
 |------|-------------|-------|
