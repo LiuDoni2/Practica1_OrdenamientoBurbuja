@@ -1,43 +1,56 @@
-# Implementaciones del Algoritmo de Ordenamiento Burbuja
+<p align="center"> 
+<a href="https://github.com/LiuDoni2"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=17&duration=4000&color=F7B11B&center=falso&vCenter=falso&lines=Algoritmo+de+Ordenamiento+Burbuja;Gracias+por+visitar+este+repositorio." height="90px"></a> 
+</p>
 
-Bienvenidos a este repositorio donde exploramos el **algoritmo de ordenamiento burbuja** en varios lenguajes de programación: C++, C, pseudocódigo (Pseint) y Python. Este algoritmo es uno de los métodos más simples para ordenar una lista de elementos, ideal para principiantes que desean entender los conceptos básicos de la programación y la manipulación de datos.
+<p align="center">
+<img src="https://i.imgur.com/tu-imagen.jpg" alt="Ordenamiento Burbuja" width="800"/>
+  
+> Antes de usar este repositorio, asegúrate de entender el **[algoritmo de ordenamiento burbuja.](#-que-es-el-algoritmo-de-ordenamiento-burbuja)** 
+</p>
 
-## ¿Qué es el Algoritmo de Ordenamiento Burbuja?
+<p align="center">
+<a href="#"><img title="Ordenamiento Burbuja" src="https://img.shields.io/badge/Si+te+agrada+el+repositorio+apóyame+con+una+🌟-red?colorA=%255ff0000&colorB=%23017e40&style=for-the-badge"></a> 
+<img src="https://i.pinimg.com/originals/d4/3c/90/d43c902873d4db8c85974dfd0798030b.gif" height="28px">
+</p>  
 
-El algoritmo de ordenamiento burbuja funciona comparando pares de elementos adyacentes en una lista y, si están en el orden incorrecto, los intercambia. Este proceso se repite hasta que no se requieren más intercambios, lo que significa que la lista está ordenada. Su nombre proviene de la forma en que los elementos "burbujean" hacia su posición correcta.
+<p align="center">
+<a href="#"><img title="Ordenamiento Burbuja" src="https://img.shields.io/badge/Lee+todo+el+README-red?colorA=%F77F48FF&colorB=%F77F48FF&style=for-the-badge"></a> 
+</p>
 
-### ¿Cómo Funciona?
+### 📍 Atajos del README
+| TEMA | DESCRIPCIÓN | ATAJO |
+|------|-------------|-------|
+| 📚 **Introducción** | *Descripción del algoritmo* | [ver](#-que-es-el-algoritmo-de-ordenamiento-burbuja) |
+| 💻 **C++** | *Implementación en C++* | [ver](#c) |
+| 💻 **C** | *Implementación en C* | [ver](#c-1) |
+| 📜 **Pseudocódigo** | *Implementación en Pseudocódigo* | [ver](#pseudocódigo-pseint) |
+| 🐍 **Python** | *Implementación en Python* | [ver](#python) |
+| ❓ **Conclusión** | *Reflexiones finales* | [ver](#conclusión) |
 
-1. **Inicialización**: Comienza en el primer elemento de la lista.
-2. **Comparación**: Compara el elemento actual con el siguiente.
-3. **Intercambio**: Si el elemento actual es mayor que el siguiente, se intercambian.
-4. **Repetición**: Se avanza al siguiente par de elementos y se repite el proceso.
-5. **Finalización**: El proceso se repite hasta que se completa una pasada sin intercambios, lo que indica que la lista está ordenada.
+----
 
-## Implementaciones en Diferentes Lenguajes
+## ❓ ¿Qué es el Algoritmo de Ordenamiento Burbuja?
+
+El **algoritmo de ordenamiento burbuja** es un método sencillo para ordenar una lista de elementos. Funciona comparando elementos adyacentes y, si están en el orden incorrecto, los intercambia. Este proceso se repite hasta que no se requieren más intercambios, lo que indica que la lista está ordenada. Aunque es fácil de entender, no es el más eficiente para listas grandes.
+
+## 💻 Implementaciones en Diferentes Lenguajes
 
 ### C++
 
-- **Particularidad**: En C++, se utilizan `std::vector` para manejar listas dinámicas, lo que facilita la gestión de la memoria en comparación con los arreglos tradicionales. 
-- **Curiosidad**: C++ permite el uso de la función `swap`, que simplifica el intercambio de elementos en el vector. Además, la sobrecarga de operadores en C++ permite crear funciones más intuitivas.
+- **Particularidad**: Utiliza `std::vector`, lo que permite manejar listas dinámicas sin preocuparse por la gestión de memoria manual.
+- **Curiosidad**: La función `swap` de C++ simplifica el intercambio de elementos, y la sobrecarga de operadores permite una sintaxis más intuitiva.
 
 ### C
 
-- **Particularidad**: La implementación en C utiliza arreglos y requiere la gestión manual de la memoria con `malloc` y `free`. Esto puede ser un poco desafiante para los principiantes, pero es fundamental para entender cómo funcionan los arreglos en este lenguaje.
-- **Curiosidad**: A diferencia de C++, C no tiene soporte para clases y objetos, lo que significa que el enfoque es más procedural. Esto puede ser un buen ejercicio para aprender a trabajar con funciones y estructuras de datos de manera más directa.
+- **Particularidad**: Se requiere gestionar la memoria manualmente con `malloc` y `free`, lo que puede ser un reto para los principiantes.
+- **Curiosidad**: A diferencia de C++, C es un lenguaje puramente procedural, lo que significa que el enfoque es más directo y centrado en funciones.
 
 ### Pseudocódigo (Pseint)
 
-- **Particularidad**: El pseudocódigo es un enfoque más abstracto que permite a los lectores enfocarse en la lógica del algoritmo sin preocuparse por la sintaxis específica. Esto es ideal para quienes están aprendiendo a programar.
-- **Curiosidad**: Pseint es una herramienta educativa que permite a los estudiantes practicar algoritmos de manera intuitiva y visual, facilitando la comprensión de conceptos de programación.
+- **Particularidad**: Permite a los estudiantes concentrarse en la lógica del algoritmo sin preocuparse por la sintaxis específica de un lenguaje de programación.
+- **Curiosidad**: Pseint es una herramienta educativa que facilita la comprensión de conceptos de programación de manera visual y accesible.
 
 ### Python
 
-- **Particularidad**: Python tiene una sintaxis muy limpia y legible, lo que hace que la implementación sea más concisa. No se requiere la declaración de tipos de datos, lo que simplifica el código.
-- **Curiosidad**: Python maneja automáticamente la memoria, lo que significa que no es necesario liberar memoria manualmente. Esto permite a los desarrolladores centrarse más en la lógica del programa y menos en la gestión de recursos.
-
-## Conclusión
-
-El algoritmo de ordenamiento burbuja es un excelente punto de partida para aprender sobre algoritmos y estructuras de datos. Aunque no es el más eficiente para listas grandes, su simplicidad lo convierte en una herramienta educativa valiosa. Este repositorio ofrece ejemplos en varios lenguajes, destacando sus particularidades y curiosidades, para ayudar a los programadores en su camino de aprendizaje.
-
-¡Explora los archivos en este repositorio para ver las implementaciones completas y experimentar con el código por ti mismo!
+- **Particularidad**: La sintaxis es limpia y legible, lo que hace que la implementación sea más concisa y fácil de entender.
+- **Curiosidad**: Python maneja automáticamente la memoria, lo que permite a los desarrolladores centrarse en la lógica del programa sin preocuparse por la gestión de
