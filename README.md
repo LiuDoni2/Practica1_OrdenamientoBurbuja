@@ -1,9 +1,6 @@
 <p align="center"> 
 <a href="https://github.com/LiuDoni2"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=17&duration=4000&color=F7B11B&center=falso&vCenter=falso&lines=Algoritmo+de+Ordenamiento+Burbuja;Gracias+por+visitar+este+repositorio." height="90px"></a> 
 </p>
-
-<p align="center">
-<img src="https://imgur.com/xOn3TKn" alt="Ordenamiento Burbuja" width="800"/>
   
 > Antes de usar este repositorio, asegúrate de entender el **[algoritmo de ordenamiento burbuja.](#-que-es-el-algoritmo-de-ordenamiento-burbuja)** 
 </p>
