@@ -3,15 +3,6 @@
 </p>
 
 <p align="center">
-<a href="#"><img title="Ordenamiento Burbuja" src="https://img.shields.io/badge/Si+te+agrada+el+repositorio+apóyame+con+una+🌟-red?colorA=%255ff0000&colorB=%23017e40&style=for-the-badge"></a> 
-<img src="https://i.pinimg.com/originals/d4/3c/90/d43c902873d4db8c85974dfd0798030b.gif" height="28px">
-</p>  
-
-<p align="center">
-<a href="#"><img title="Ordenamiento Burbuja" src="https://img.shields.io/badge/Lee+todo+el+README-red?colorA=%F77F48FF&colorB=%F77F48FF&style=for-the-badge"></a> 
-</p>
-
-<p align="center">
 <img src="https://i.imgur.com/xOn3TKn.gif" alt="Animación del Algoritmo de Ordenamiento Burbuja" width="600"/>
 </p>
 
