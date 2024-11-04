@@ -1,4 +1,4 @@
-# README - Implementaciones del Algoritmo de Ordenamiento Burbuja
+# Implementaciones del Algoritmo de Ordenamiento Burbuja
 
 Bienvenidos a este repositorio donde exploramos el **algoritmo de ordenamiento burbuja** en varios lenguajes de programación: C++, C, pseudocódigo (Pseint) y Python. Este algoritmo es uno de los métodos más simples para ordenar una lista de elementos, ideal para principiantes que desean entender los conceptos básicos de la programación y la manipulación de datos.
 
