@@ -25,5 +25,4 @@ lista = [int(input(f"Ingrese el número en la posición {i + 1}: ")) for i in ra
 
 print("Lista original:", lista)
 burbuja(lista)
-print("Lista ordenada:", lista)
-
+print("Lista ordenada:", lista)```
