@@ -144,8 +144,51 @@ La estructura del código en C se basa en su enfoque de programación procedural
 
 ### Pseudocódigo (Pseint)
 
-- **Particularidad**: Permite a los estudiantes concentrarse en la lógica del algoritmo sin preocuparse por la sintaxis específica de un lenguaje de programación.
-- **Curiosidad**: Pseint es una herramienta educativa que facilita la comprensión de conceptos de programación de manera visual y accesible.
+**Puntos Importantes del Código**
+
+1. **Definición del Algoritmo:**
+   - `Algoritmo OrdenamientoBurbuja` define el algoritmo principal para ordenar una lista de números.
+
+2. **Dimensionamiento del Arreglo:**
+   - `Dimensionar lista(5)` crea un arreglo con 5 posiciones, donde se almacenarán los números ingresados por el usuario.
+
+3. **Entrada del Usuario:**
+   - Un bucle `Para` permite al usuario ingresar los números en las posiciones del arreglo.
+
+4. **Visualización Inicial:**
+   - Se imprime la lista original utilizando un formato que muestra todos los elementos ingresados.
+
+5. **Llamada a la Función de Ordenamiento:**
+   - `OrdenarBurbuja(lista,5)` llama a la función que implementa el algoritmo de ordenamiento.
+
+6. **Salida de Resultados:**
+   - Se imprime la lista ordenada después de aplicar el algoritmo.
+
+**Características del Código**
+
+- **Simplicidad:**
+  - La sintaxis de Pseint es sencilla y fácil de entender, lo que la hace ideal para la enseñanza de algoritmos.
+
+- **Estructura Modular:**
+  - El uso de funciones permite separar la lógica del ordenamiento de la lógica principal, mejorando la claridad del código.
+
+- **Visualización Intuitiva:**
+  - La impresión de la lista original y la lista ordenada está diseñada para ser clara y comprensible.
+
+**Peculiaridades**
+
+- **Indices de Arreglo:**
+  - En Pseint, los arreglos suelen comenzar desde 1, a diferencia de otros lenguajes como C o C++, donde comienzan desde 0. Esto puede ser confuso para quienes vienen de otros lenguajes.
+
+- **Uso de Funciones:**
+  - La implementación del ordenamiento se realiza en una función separada, lo que permite reutilizar la lógica en otros contextos si es necesario.
+
+- **Formato de Salida:**
+  - La forma de escribir los resultados utiliza comas para separar los elementos, lo que mejora la legibilidad.
+
+**Forma en Pseint**
+
+Pseint es una herramienta de pseudocódigo diseñada para facilitar la comprensión de algoritmos y programación. Su estructura está orientada a la simplicidad y a la claridad, permitiendo a los estudiantes centrarse en la lógica del algoritmo sin preocuparse por detalles específicos de un lenguaje de programación en particular. La separación de la lógica en funciones es una buena práctica que se puede aplicar en muchos lenguajes de programación.
 
 ### Python
 
