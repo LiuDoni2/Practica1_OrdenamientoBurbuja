@@ -64,7 +64,7 @@ La idea básica detrás del algoritmo es comparar elementos adyacentes en la lis
 5. **Visualización:**
    - Imprime la lista original y la lista ordenada para que el usuario pueda ver el resultado del ordenamiento.
 
-# Características del Código
+**Características del Código**
 
 - **Simplicidad:** 
   - El algoritmo y su implementación son fáciles de entender, lo que lo hace ideal para principiantes.
@@ -75,7 +75,7 @@ La idea básica detrás del algoritmo es comparar elementos adyacentes en la lis
 - **Eficiencia:**
   - Aunque el Algoritmo de Ordenamiento Burbuja es simple, no es el más eficiente para listas grandes, ya que su complejidad temporal es O(n²) en el peor de los casos.
 
-# Peculiaridades
+**Peculiaridades**
 
 - **Uso de `vector`:**
   - En lugar de usar arreglos estáticos, el uso de `vector` permite manejar un número variable de elementos sin preocuparse por el tamaño inicial.
@@ -86,7 +86,7 @@ La idea básica detrás del algoritmo es comparar elementos adyacentes en la lis
 - **Manejo de Errores:**
   - Se incluye una simple validación para asegurar que el usuario ingrese un número positivo, lo que mejora la robustez del programa.
 
-# Forma 
+**Forma**
 
 La estructura del código en C++ se basa en sus características de programación orientada a objetos y su capacidad para manejar datos dinámicamente a través de clases como `vector`. La sintaxis de C++ permite el uso de funciones como `swap` para facilitar tareas comunes. La claridad y organización del código son fundamentales en C++, especialmente cuando se trabaja en proyectos más grandes o en equipos.
 
