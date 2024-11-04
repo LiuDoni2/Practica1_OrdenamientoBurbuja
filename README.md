@@ -92,8 +92,55 @@ La estructura del código en C++ se basa en sus características de programació
 
 ### C
 
-- **Particularidad**: Se requiere gestionar la memoria manualmente con `malloc` y `free`, lo que puede ser un reto para los principiantes.
-- **Curiosidad**: A diferencia de C++, C es un lenguaje puramente procedural, lo que significa que el enfoque es más directo y centrado en funciones.
+**Puntos Importantes del Código**
+
+1. **Inclusión de Bibliotecas:**
+   - `#include <stdio.h>` permite realizar operaciones de entrada y salida estándar.
+   - `#include <stdlib.h>` se utiliza para la gestión de memoria dinámica con funciones como `malloc` y `free`.
+
+2. **Función `burbuja`:**
+   - La función `burbuja` toma un arreglo de enteros y su tamaño como argumentos.
+   - Implementa el algoritmo de ordenamiento burbuja utilizando dos bucles anidados:
+     - El primer bucle controla las pasadas.
+     - El segundo bucle compara y realiza intercambios de elementos adyacentes si están en el orden incorrecto.
+
+3. **Intercambio de Elementos:**
+   - Se utiliza una variable temporal (`temp`) para intercambiar los valores de los elementos en el arreglo.
+
+4. **Entrada del Usuario:**
+   - Se solicita al usuario que ingrese la cantidad de números y los números en sí. Incluye una validación para asegurarse de que el número de entradas sea positivo.
+
+5. **Visualización:**
+   - Imprime la lista original y la lista ordenada para que el usuario pueda ver el resultado.
+
+**Características del Código**
+
+- **Simplicidad:**
+  - El algoritmo y su implementación son fáciles de seguir, lo que lo hace adecuado para principiantes.
+
+- **Gestión de Memoria:**
+  - Utiliza `malloc` para asignar memoria dinámicamente para el arreglo de enteros, permitiendo trabajar con un número variable de elementos.
+
+- **Eficiencia:**
+  - Aunque el algoritmo es simple, su complejidad temporal es O(n²) en el peor de los casos, lo que puede ser ineficiente para listas grandes.
+
+**Peculiaridades**
+
+- **Uso de Punteros:**
+  - En lugar de usar un arreglo estático, se utiliza un puntero para manejar un arreglo dinámico. Esto permite flexibilidad en el tamaño del arreglo.
+
+- **Interacción con el Usuario:**
+  - Incluye interacciones básicas, como solicitudes de entrada y mensajes, mejorando la experiencia del usuario.
+
+- **Manejo de Errores:**
+  - Se verifica que el número ingresado sea positivo, lo que añade robustez al programa.
+
+- **Liberación de Memoria:**
+  - Al final del programa, se utiliza `free` para liberar la memoria asignada dinámicamente, evitando fugas de memoria.
+
+**Forma en C**
+
+La estructura del código en C se basa en su enfoque de programación procedural y en el manejo de memoria a través de punteros. A diferencia de C++, C no tiene clases ni objetos, lo que lleva a una implementación más directa y simple. El uso de funciones como `malloc` y `free` es fundamental para la gestión de memoria dinámica en C, y la simplicidad del lenguaje facilita la comprensión del algoritmo.
 
 ### Pseudocódigo (Pseint)
 
