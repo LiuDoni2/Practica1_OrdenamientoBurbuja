@@ -192,5 +192,50 @@ Pseint es una herramienta de pseudocódigo diseñada para facilitar la comprensi
 
 ### Python
 
-- **Particularidad**: La sintaxis es limpia y legible, lo que hace que la implementación sea más concisa y fácil de entender.
-- **Curiosidad**: Python maneja automáticamente la memoria, lo que permite a los desarrolladores centrarse en la lógica del programa sin preocuparse por la gestión de
+**Puntos Importantes del Código**
+
+1. **Definición de la Función `burbuja`:**
+   - La función `burbuja` toma como argumento una lista de números y aplica el algoritmo de ordenamiento burbuja sobre ella.
+
+2. **Bucle Externo:**
+   - `for i in range(len(lista)):` controla el número de pasadas necesarias sobre la lista.
+
+3. **Bucle Interno:**
+   - `for j in range(len(lista) - 1):` compara elementos adyacentes en la lista y realiza el intercambio si están en el orden incorrecto.
+
+4. **Intercambio de Elementos:**
+   - Utiliza la asignación múltiple en Python para intercambiar elementos de forma concisa: `lista[j], lista[j + 1] = lista[j + 1], lista[j]`.
+
+5. **Entrada del Usuario:**
+   - `n = int(input(...))` solicita al usuario la cantidad de números a ingresar, y luego se construye la lista usando una comprensión de lista.
+
+6. **Visualización:**
+   - Imprime la lista original antes y después de aplicar el algoritmo para que el usuario pueda ver los cambios.
+
+**Características del Código**
+
+- **Simplicidad:**
+  - La sintaxis de Python es clara y fácil de entender, lo que facilita la lectura y el mantenimiento del código.
+
+- **Uso de Comprensiones de Lista:**
+  - La creación de la lista mediante comprensión de lista es una característica poderosa de Python que hace que el código sea más compacto y legible.
+
+- **Interactividad:**
+  - Permite al usuario interactuar fácilmente mediante la entrada de datos.
+
+**Peculiaridades**
+
+- **Indexación de Lista:**
+  - En Python, las listas se indexan desde 0, lo que es diferente de otros lenguajes donde pueden empezar desde 1.
+
+- **Asignación Múltiple:**
+  - La posibilidad de realizar múltiples asignaciones en una sola línea es una característica distintiva de Python que simplifica el intercambio de valores.
+
+- **No Manejo de Errores:**
+  - El código no incluye validaciones de entrada, lo que podría ser una mejora para asegurar que el usuario ingrese valores válidos.
+
+**Forma en Python**
+
+Python es un lenguaje de programación de alto nivel que se enfoca en la legibilidad y la simplicidad. Su sintaxis limpia y el uso de características como las comprensiones de lista permiten a los programadores escribir código de forma rápida y eficiente. En Python, la gestión de memoria y los tipos de datos son manejados automáticamente, lo que permite a los desarrolladores centrarse más en la lógica del algoritmo que en los detalles de implementación.
+
+
