@@ -6,7 +6,7 @@ def burbuja(lista):
         print(f"Después de la pasada {i + 1}: {lista}")
 
 print("Ordenamiento Burbuja - Bubble Sort")
-n = int(input("Ingrese el numero de elementos: ")
+n = int(input("Ingrese el numero de elementos: "))
 lista = [int(input(f"Ingrese el número en la posición {k + 1}: ")) for k in range(n)]
 
 print("Lista original:", lista)
