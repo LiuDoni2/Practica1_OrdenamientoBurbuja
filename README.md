@@ -38,7 +38,7 @@ La idea básica detrás del algoritmo es comparar elementos adyacentes en la lis
 
 ## 💻 Implementaciones en Diferentes Lenguajes
 
-### C++
+### Algoritmo en C++
 
 ``` cpp
 #include <iostream>
@@ -129,7 +129,7 @@ int main() {
 
 La estructura del código en C++ se basa en sus características de programación orientada a objetos y su capacidad para manejar datos dinámicamente a través de clases como `vector`. La sintaxis de C++ permite el uso de funciones como `swap` para facilitar tareas comunes. La claridad y organización del código son fundamentales en C++, especialmente cuando se trabaja en proyectos más grandes o en equipos.
 
-### C
+### Algoritmo en C
 
 ``` c
 #include <stdio.h>
@@ -278,6 +278,23 @@ La estructura del código en C se basa en su enfoque de programación procedural
 Pseint es una herramienta de pseudocódigo diseñada para facilitar la comprensión de algoritmos y programación. Su estructura está orientada a la simplicidad y a la claridad, permitiendo a los estudiantes centrarse en la lógica del algoritmo sin preocuparse por detalles específicos de un lenguaje de programación en particular. La separación de la lógica en funciones es una buena práctica que se puede aplicar en muchos lenguajes de programación.
 
 ### Python
+
+``` python
+def burbuja(lista):
+    for i in range(len(lista)):
+        for j in range(len(lista) - 1):
+            if lista[j] > lista[j + 1]:
+                lista[j], lista[j + 1] = lista[j + 1], lista[j]
+        print(f"Después de la pasada {i + 1}: {lista}")
+
+print("Ordenamiento Burbuja - Bubble Sort")
+n = int(input("Ingrese el numero de elementos: "))
+lista = [int(input(f"Ingrese el número en la posición {k + 1}: ")) for k in range(n)]
+
+print("Lista original:", lista)
+burbuja(lista)
+print("Lista ordenada:", lista)
+``` 
 
 **Puntos Importantes del Código**
 
