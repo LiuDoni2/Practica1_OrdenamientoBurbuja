@@ -20,8 +20,6 @@
 
 ## ❓ ¿Qué es el Algoritmo de Ordenamiento Burbuja?
 
-# Algoritmo de Ordenamiento Burbuja (Bubble Sort)
-
 El **algoritmo de ordenamiento burbuja** es uno de los métodos más básicos para organizar una lista de elementos en orden (ya sea ascendente o descendente). Aunque no es el más eficiente para listas grandes, es una excelente forma de aprender cómo funcionan los algoritmos de ordenamiento.
 
 ## ¿Cómo funciona?
