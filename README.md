@@ -412,8 +412,8 @@ Python ofrece una forma compacta de crear listas mediante list comprehensions, l
 lista = [int(input(f"Ingrese el elemento {k + 1}: ")) for k in range(n)]
 ```
 Esta línea crea una lista `lista` con los elementos ingresados por el usuario, iterando `n` veces.
----
 
+---
 ### Ventajas y Limitaciones del Algoritmo
 
 ### Ventajas:
