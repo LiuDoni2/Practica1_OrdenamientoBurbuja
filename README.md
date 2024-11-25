@@ -19,22 +19,54 @@
 ----
 
 ## ❓ ¿Qué es el Algoritmo de Ordenamiento Burbuja?
-El Algoritmo de Ordenamiento Burbuja, conocido como **Bubble Sort**, es un método sencillo y directo para organizar elementos en una lista. Su objetivo principal es ordenar números (o cualquier tipo de datos) en un orden específico, generalmente de menor a mayor.
 
-*¿Cómo funciona?*
+# Algoritmo de Ordenamiento Burbuja (Bubble Sort)
 
-La idea básica detrás del algoritmo es comparar elementos adyacentes en la lista. Si el primer elemento es mayor que el segundo, se intercambian. Este proceso se repite a lo largo de toda la lista. Con cada pasada por la lista, el elemento más grande "flota" hacia el final, como una burbuja en el agua.
+El **algoritmo de ordenamiento burbuja** es uno de los métodos más básicos para organizar una lista de elementos en orden (ya sea ascendente o descendente). Aunque no es el más eficiente para listas grandes, es una excelente forma de aprender cómo funcionan los algoritmos de ordenamiento.
 
-*Pasos clave del algoritmo:*
+## ¿Cómo funciona?
 
-- **Comparación**: Se comparan dos elementos adyacentes.
-- **Intercambio**: Si están en el orden incorrecto, se intercambian.
-- **Repetición**: Este proceso se repite hasta que no se necesiten más intercambios, indicando que la lista está ordenada.
+El nombre "burbuja" se debe a que los valores más grandes (o más pequeños, dependiendo del caso) "flotan" hacia el final de la lista, como burbujas en el agua.
 
-*Características:*
+### Pasos del algoritmo:
+1. Compara dos elementos adyacentes en la lista.
+2. Si están en el orden equivocado (por ejemplo, el primero es mayor que el segundo en un orden ascendente), intercámbialos.
+3. Repite este proceso para todos los elementos de la lista, una y otra vez, hasta que esté completamente ordenada.
 
-- **Simplicidad**: Es fácil de entender e implementar, lo que lo hace ideal para enseñar conceptos básicos de ordenamiento.
-- **Eficiencia**: No es el algoritmo más eficiente para listas grandes, ya que su tiempo de ejecución es relativamente alto en comparación con otros métodos de ordenamiento más avanzados.
+## Ejemplo paso a paso
+
+Imagina que tienes la lista **[5, 3, 8, 2]** y quieres ordenarla en forma ascendente:
+
+### Primera pasada:
+- Compara 5 y 3. Como 5 > 3, los intercambias. Lista: **[3, 5, 8, 2]**  
+- Compara 5 y 8. Como 5 < 8, no haces nada. Lista: **[3, 5, 8, 2]**  
+- Compara 8 y 2. Como 8 > 2, los intercambias. Lista: **[3, 5, 2, 8]**  
+Ahora, el número 8 está en su lugar correcto.
+
+### Segunda pasada:
+- Compara 3 y 5. Como 3 < 5, no haces nada. Lista: **[3, 5, 2, 8]**  
+- Compara 5 y 2. Como 5 > 2, los intercambias. Lista: **[3, 2, 5, 8]**  
+Ahora, el número 5 está en su lugar correcto.
+
+### Tercera pasada:
+- Compara 3 y 2. Como 3 > 2, los intercambias. Lista: **[2, 3, 5, 8]**  
+Ahora, la lista está completamente ordenada.
+
+## Características del algoritmo
+
+- **Simplicidad:** Es fácil de entender y programar.
+- **Eficiencia baja:** Su complejidad es \(O(n^2)\) en el peor y promedio de los casos, lo que significa que se vuelve lento para listas grandes.
+- **In-place:** No requiere memoria extra significativa, ya que se realiza directamente en la lista original.
+
+## Ventajas y Desventajas
+
+### Ventajas:
+- Fácil de implementar.
+- Útil para listas pequeñas o como introducción a los algoritmos de ordenamiento.
+
+### Desventajas:
+- Muy ineficiente para listas grandes.
+- Realiza muchas comparaciones e intercambios innecesarios en el peor de los casos.
 
 ## 💻 Implementaciones en Diferentes Lenguajes
 
