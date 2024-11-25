@@ -66,7 +66,7 @@ Ahora, la lista está completamente ordenada.
 - Muy ineficiente para listas grandes.
 - Realiza muchas comparaciones e intercambios innecesarios en el peor de los casos.
 
-## 💻 Implementaciones en Diferentes Lenguajes
+# 💻 Implementaciones en Diferentes Lenguajes
 
 ### Algoritmo en C++
 
