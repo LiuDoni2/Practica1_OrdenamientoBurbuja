@@ -288,53 +288,63 @@ Función OrdenarBurbuja(lista,n)
 FinFunción
 ``` 
 
-**Puntos Importantes del Código**
+### 1. **Incluir las instrucciones básicas**
+En este pseudocódigo, la estructura general del algoritmo es simple y consiste en solicitar al usuario 5 números, ordenarlos mediante el algoritmo de burbuja, y luego mostrar la lista antes y después del ordenamiento.
 
-1. **Definición del Algoritmo:**
-   - `Algoritmo OrdenamientoBurbuja` define el algoritmo principal para ordenar una lista de números.
+#### Definición de la lista
+El pseudocódigo comienza con la declaración de una lista de tamaño fijo, en este caso, de 5 elementos. La dimensión de la lista es establecida como una constante en el inicio, lo que limita la flexibilidad, ya que solo se pueden manejar 5 elementos.
 
-2. **Dimensionamiento del Arreglo:**
-   - `Dimensionar lista(5)` crea un arreglo con 5 posiciones, donde se almacenarán los números ingresados por el usuario.
+#### Solicitar los números al usuario
+A continuación, se utiliza un ciclo para solicitar al usuario que ingrese 5 números, uno por uno. La función **`Escribir`** se emplea para mostrar un mensaje indicándole al usuario que ingrese un número en cada posición de la lista. Luego, la función **`Leer`** captura el número ingresado y lo almacena en el arreglo en la posición correspondiente.
 
-3. **Entrada del Usuario:**
-   - Un bucle `Para` permite al usuario ingresar los números en las posiciones del arreglo.
+#### Mostrar la lista original
+Una vez que el usuario ha ingresado todos los números, se muestra la lista tal como fue ingresada, es decir, antes de aplicar cualquier ordenamiento.
 
-4. **Visualización Inicial:**
-   - Se imprime la lista original utilizando un formato que muestra todos los elementos ingresados.
+#### Ordenar la lista utilizando el algoritmo de burbuja
+El algoritmo de burbuja se implementa en la función **`OrdenarBurbuja`**, que toma la lista y su tamaño como parámetros. Esta función realiza el proceso de comparar los elementos adyacentes y, si es necesario, intercambiarlos para que los números más grandes "burbujearán" hacia el final de la lista.
 
-5. **Llamada a la Función de Ordenamiento:**
-   - `OrdenarBurbuja(lista,5)` llama a la función que implementa el algoritmo de ordenamiento.
+#### Mostrar la lista ordenada
+Finalmente, se imprime la lista después de que haya sido ordenada, mostrando los números en el orden correcto según el algoritmo de burbuja.
 
-6. **Salida de Resultados:**
-   - Se imprime la lista ordenada después de aplicar el algoritmo.
+### 2. **Función `OrdenarBurbuja`**
 
-**Características del Código**
+La función **`OrdenarBurbuja`** implementa el clásico algoritmo de ordenamiento burbuja. Este algoritmo consiste en recorrer el arreglo varias veces y comparar elementos adyacentes, intercambiándolos si están en el orden incorrecto. La función realiza lo siguiente:
 
-- **Simplicidad:**
-  - La sintaxis de Pseint es sencilla y fácil de entender, lo que la hace ideal para la enseñanza de algoritmos.
+- Se definen las variables `i`, `j` y `temp`, donde `i` es el índice del ciclo externo y `j` el índice del ciclo interno que compara los elementos adyacentes.
+- Se utiliza una variable temporal `temp` para facilitar el intercambio de los elementos cuando sea necesario.
+- El ciclo **externo** recorre el arreglo, y el ciclo **interno** realiza las comparaciones y los intercambios de elementos adyacentes si están fuera de orden.
 
-- **Estructura Modular:**
-  - El uso de funciones permite separar la lógica del ordenamiento de la lógica principal, mejorando la claridad del código.
+---
 
-- **Visualización Intuitiva:**
-  - La impresión de la lista original y la lista ordenada está diseñada para ser clara y comprensible.
+### Conceptos Clave para Principiantes
 
-**Peculiaridades**
+### 1. **Algoritmo de Ordenamiento Burbuja**
+El algoritmo de **burbuja** es uno de los más sencillos de entender, aunque no es muy eficiente para grandes cantidades de datos. En este algoritmo, los elementos del arreglo se comparan de dos en dos y, si están fuera de orden, se intercambian. Este proceso se repite hasta que la lista está completamente ordenada.
 
-- **Indices de Arreglo:**
-  - En Pseint, los arreglos suelen comenzar desde 1, a diferencia de otros lenguajes como C o C++, donde comienzan desde 0. Esto puede ser confuso para quienes vienen de otros lenguajes.
+### 2. **Estructura de Ciclos (Bucles)**
+El pseudocódigo utiliza ciclos **`Para`** para recorrer las posiciones del arreglo:
+- El **bucle externo** se encarga de pasar por todo el arreglo, asegurándose de que cada elemento sea comparado.
+- El **bucle interno** compara dos elementos adyacentes y realiza un intercambio si es necesario. Este ciclo es esencial para asegurar que los elementos más grandes se "muevan" hacia el final del arreglo.
 
-- **Uso de Funciones:**
-  - La implementación del ordenamiento se realiza en una función separada, lo que permite reutilizar la lógica en otros contextos si es necesario.
+### 3. **Intercambio de Elementos**
+El intercambio de elementos es una parte clave del algoritmo. Si dos elementos están fuera de orden, el algoritmo los intercambia utilizando una variable temporal **`temp`**. Esto permite que los elementos cambien de posición sin perder sus valores.
 
-- **Formato de Salida:**
-  - La forma de escribir los resultados utiliza comas para separar los elementos, lo que mejora la legibilidad.
+### 4. **Entrada y Salida de Datos**
+En el pseudocódigo, se utiliza la función **`Escribir`** para mostrar mensajes al usuario y **`Leer`** para capturar los datos ingresados por el usuario. Estas funciones permiten interactuar con el programa, pidiendo al usuario que ingrese los números a ordenar y mostrando los resultados antes y después del ordenamiento.
 
-**Forma en Pseint**
+---
 
-Pseint es una herramienta de pseudocódigo diseñada para facilitar la comprensión de algoritmos y programación. Su estructura está orientada a la simplicidad y a la claridad, permitiendo a los estudiantes centrarse en la lógica del algoritmo sin preocuparse por detalles específicos de un lenguaje de programación en particular. La separación de la lógica en funciones es una buena práctica que se puede aplicar en muchos lenguajes de programación.
+### Ventajas y Limitaciones del Algoritmo
 
-### Python
+### Ventajas:
+- **Simplicidad**: El algoritmo de burbuja es fácil de entender y se puede implementar rápidamente, lo que lo hace adecuado para principiantes en la programación.
+- **Visualización clara**: El proceso de comparación e intercambio es sencillo de seguir, lo que ayuda a los estudiantes a comprender cómo funcionan los algoritmos de ordenamiento.
+
+### Limitaciones:
+- **Ineficiencia para listas grandes**: El algoritmo de burbuja tiene una **complejidad de tiempo \(O(n^2)\)**, lo que lo hace muy lento cuando se trabaja con listas grandes. A medida que el número de elementos aumenta, el tiempo de ejecución crece exponencialmente.
+- **Menos eficiente comparado con otros algoritmos**: Aunque es fácil de entender, el algoritmo de burbuja es más lento que otros algoritmos como el **quicksort** o el **mergesort**, que tienen una complejidad de tiempo mucho más eficiente.
+
+## Python
 
 ``` python
 def burbuja(lista):
