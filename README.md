@@ -68,7 +68,7 @@ Ahora, la lista está completamente ordenada.
 
 # 💻 Implementaciones en Diferentes Lenguajes
 
-### Algoritmo en C++
+## Algoritmo en C++
 
 ``` cpp
 #include <iostream>
@@ -114,52 +114,51 @@ int main() {
 }
 ``` 
 
-1. **Uso de Bibliotecas:**
-   - `#include <iostream>` permite la entrada y salida estándar.
-   - `#include <vector>` utiliza la clase `vector`, que permite crear arreglos dinámicos de tamaño variable.
+### 1. **Incluir las librerías necesarias**
+- `#include <iostream>`: Esta librería es necesaria para usar las funciones de entrada y salida, como `cin` y `cout`. Permite interactuar con el usuario, como leer datos desde el teclado o imprimir resultados en la consola.
+- `#include <vector>`: La librería `vector` nos permite usar un tipo de dato llamado **vector**, que es una estructura de datos dinámica en C++. Un vector es como un arreglo, pero con la ventaja de que su tamaño puede cambiar durante la ejecución del programa.
 
-2. **Función `burbuja`:**
-   - La función `burbuja` recibe un vector de enteros por referencia, lo que permite modificar el vector original sin hacer copias innecesarias.
-   - Utiliza dos bucles anidados para implementar el algoritmo de ordenamiento burbuja:
-     - El primer bucle controla las pasadas.
-     - El segundo bucle compara elementos adyacentes y los intercambia si están en el orden incorrecto.
+### 2. **Uso del espacio de nombres `std`**
+- `using namespace std;`:
+  - Esta línea permite evitar tener que escribir `std::` antes de las funciones o clases estándar de C++, como `cout`, `cin` y `vector`. Esto simplifica el código y lo hace más legible para los principiantes.
 
-3. **Intercambio de Elementos:**
-   - Utiliza la función `swap` para intercambiar elementos, lo que simplifica el código y mejora la legibilidad.
+### 3. **Definición de la función `burbuja`**
+- La función `burbuja` es el corazón del algoritmo de ordenamiento burbuja, que organiza los elementos de un vector en orden ascendente. Utiliza dos bucles anidados para comparar y, si es necesario, intercambiar los elementos adyacentes.
 
-4. **Entrada del Usuario:**
-   - Se pide al usuario que ingrese la cantidad de números y los números en sí. Incluye una validación para asegurarse de que el número de entradas sea positivo.
+### 4. **Función `main`**
+- En la función `main`, se lleva a cabo la interacción con el usuario para ingresar los números a ordenar. Además, se llama a la función `burbuja` para realizar el ordenamiento, y se muestra la lista antes y después de ordenarla.
 
-5. **Visualización:**
-   - Imprime la lista original y la lista ordenada para que el usuario pueda ver el resultado del ordenamiento.
+---
 
-**Características del Código**
+### Conceptos Clave para Principiantes
 
-- **Simplicidad:** 
-  - El algoritmo y su implementación son fáciles de entender, lo que lo hace ideal para principiantes.
-  
-- **Estructura:** 
-  - La separación entre la función de ordenamiento y la función principal (`main`) promueve la claridad y la organización del código.
+### 1. **Vectores en C++**
+- Un **vector** es un tipo de dato dinámico que puede almacenar una lista de elementos. Su tamaño puede cambiar durante la ejecución del programa.
+- Los vectores son más flexibles que los arreglos tradicionales, y son una opción recomendada cuando no sabemos el tamaño exacto de los datos con los que vamos a trabajar.
 
-- **Eficiencia:**
-  - Aunque el Algoritmo de Ordenamiento Burbuja es simple, no es el más eficiente para listas grandes, ya que su complejidad temporal es O(n²) en el peor de los casos.
+### 2. **Paso por Referencia**
+- Al usar el símbolo `&` en el parámetro de la función (`vector<int>& lista`), estamos pasando la referencia al vector. Esto significa que cualquier cambio que hagamos dentro de la función afectará al vector original que se pasó al llamar la función.
 
-**Peculiaridades**
+### 3. **Intercambio de Valores**
+- La función `swap()` intercambia dos valores. En este caso, intercambiamos elementos en el vector si están en el orden incorrecto.
 
-- **Uso de `vector`:**
-  - En lugar de usar arreglos estáticos, el uso de `vector` permite manejar un número variable de elementos sin preocuparse por el tamaño inicial.
+### 4. **Ciclos (Bucles)**
+- El ciclo `for` es una estructura de control que permite repetir un bloque de código varias veces. El bucle `for` en el código es utilizado tanto para leer los números como para ordenar la lista.
 
-- **Interacción con el Usuario:**
-  - La implementación incluye interacciones básicas, como solicitudes de entrada y mensajes, lo que mejora la experiencia del usuario.
+---
 
-- **Manejo de Errores:**
-  - Se incluye una simple validación para asegurar que el usuario ingrese un número positivo, lo que mejora la robustez del programa.
+### Ventajas y Limitaciones de la Implementación
 
-**Forma**
+### Ventajas:
+- **Interactividad:** Permite al usuario ingresar los datos que quiere ordenar.
+- **Simplicidad:** Es fácil de entender y modificar para principiantes.
+- **Uso de estructuras modernas de C++:** El código aprovecha vectores y funciones estándar que simplifican su implementación.
 
-La estructura del código en C++ se basa en sus características de programación orientada a objetos y su capacidad para manejar datos dinámicamente a través de clases como `vector`. La sintaxis de C++ permite el uso de funciones como `swap` para facilitar tareas comunes. La claridad y organización del código son fundamentales en C++, especialmente cuando se trabaja en proyectos más grandes o en equipos.
+### Limitaciones:
+- **Complejidad:** La complejidad del algoritmo burbuja es \(O(n^2)\), lo que lo hace lento para listas grandes.
+- **Faltan optimizaciones:** Se podrían agregar mejoras, como una verificación para detener el algoritmo si la lista ya está ordenada, lo que reduciría el tiempo de ejecución en algunos casos.
 
-### Algoritmo en C
+## Algoritmo en C
 
 ``` c
 #include <stdio.h>
