@@ -130,7 +130,7 @@ int main() {
 
 ---
 
-### Conceptos Clave para Principiantes
+### Conceptos Clave 
 
 ### 1. **Vectores en C++**
 - Un **vector** es un tipo de dato dinámico que puede almacenar una lista de elementos. Su tamaño puede cambiar durante la ejecución del programa.
@@ -229,7 +229,7 @@ La función `main` es la que coordina la ejecución del programa. Aquí es donde
 
 ---
 
-### Conceptos Clave para Principiantes
+### Conceptos Clave
 
 ### 1. **Asignación Dinámica de Memoria**
 - En C, los arreglos de tamaño variable no pueden ser creados de manera estática. Usamos la función `malloc` para asignar memoria en tiempo de ejecución y obtener un arreglo de tamaño dinámico. La memoria asignada debe liberarse manualmente usando `free` para evitar fugas de memoria.
