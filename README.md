@@ -208,57 +208,59 @@ int main() {
 }
 ``` 
 
-**Puntos Importantes del Código**
+### 1. **Incluir las librerías necesarias**
+- **`#include <stdio.h>`**: Esta librería permite usar funciones de entrada y salida estándar, como `printf` (para mostrar mensajes en consola) y `scanf` (para leer datos del usuario).
+- **`#include <stdlib.h>`**: Esta librería es necesaria para trabajar con funciones de memoria dinámica, como `malloc` (para asignar memoria) y `free` (para liberar memoria previamente asignada).
 
-1. **Inclusión de Bibliotecas:**
-   - `#include <stdio.h>` permite realizar operaciones de entrada y salida estándar.
-   - `#include <stdlib.h>` se utiliza para la gestión de memoria dinámica con funciones como `malloc` y `free`.
+### 2. **Uso de la función `burbuja`**
+La función `burbuja` es la que implementa el **algoritmo de ordenamiento burbuja**. Este algoritmo compara los elementos adyacentes de un arreglo y los intercambia si están en el orden incorrecto. La función tiene dos bucles anidados:
+- **Bucle externo**: Recorre el arreglo completo.
+- **Bucle interno**: Compara los elementos adyacentes y los intercambia si es necesario.
 
-2. **Función `burbuja`:**
-   - La función `burbuja` toma un arreglo de enteros y su tamaño como argumentos.
-   - Implementa el algoritmo de ordenamiento burbuja utilizando dos bucles anidados:
-     - El primer bucle controla las pasadas.
-     - El segundo bucle compara y realiza intercambios de elementos adyacentes si están en el orden incorrecto.
+El intercambio de los elementos se realiza mediante el uso de una **variable temporal** que ayuda a almacenar uno de los elementos mientras se realiza el intercambio. Al final del proceso, los elementos más grandes se "burbujearán" hacia el final del arreglo, quedando la lista ordenada.
 
-3. **Intercambio de Elementos:**
-   - Se utiliza una variable temporal (`temp`) para intercambiar los valores de los elementos en el arreglo.
+### 3. **Función `main`**
+La función `main` es la que coordina la ejecución del programa. Aquí es donde:
+- Se le solicita al usuario el número de elementos a ordenar.
+- Se asigna memoria dinámica para almacenar el arreglo de enteros con la función `malloc`.
+- Se leen los valores del usuario y se almacenan en el arreglo.
+- Luego, se imprime la lista original, se llama a la función `burbuja` para ordenar el arreglo, y finalmente, se imprime la lista ordenada.
+- La memoria asignada dinámicamente se libera con `free` al final para evitar fugas de memoria.
 
-4. **Entrada del Usuario:**
-   - Se solicita al usuario que ingrese la cantidad de números y los números en sí. Incluye una validación para asegurarse de que el número de entradas sea positivo.
+---
 
-5. **Visualización:**
-   - Imprime la lista original y la lista ordenada para que el usuario pueda ver el resultado.
+### Conceptos Clave para Principiantes
 
-**Características del Código**
+### 1. **Asignación Dinámica de Memoria**
+- En C, los arreglos de tamaño variable no pueden ser creados de manera estática. Usamos la función `malloc` para asignar memoria en tiempo de ejecución y obtener un arreglo de tamaño dinámico. La memoria asignada debe liberarse manualmente usando `free` para evitar fugas de memoria.
 
-- **Simplicidad:**
-  - El algoritmo y su implementación son fáciles de seguir, lo que lo hace adecuado para principiantes.
+### 2. **Intercambio de Elementos**
+- En el algoritmo de burbuja, los elementos adyacentes se comparan entre sí y se intercambian cuando están en el orden incorrecto. Para intercambiar los valores, se usa una **variable temporal** para almacenar un valor mientras se realiza el intercambio.
 
-- **Gestión de Memoria:**
-  - Utiliza `malloc` para asignar memoria dinámicamente para el arreglo de enteros, permitiendo trabajar con un número variable de elementos.
+### 3. **Uso de `scanf` y `printf`**
+- **`scanf`**: Esta función se utiliza para leer datos desde el teclado. En este caso, se usa para obtener el número de elementos y los valores de la lista.
+- **`printf`**: Esta función imprime datos en la consola. En este código, se usa para mostrar los resultados de la lista antes y después de ser ordenada.
 
-- **Eficiencia:**
-  - Aunque el algoritmo es simple, su complejidad temporal es O(n²) en el peor de los casos, lo que puede ser ineficiente para listas grandes.
+### 4. **Ciclos (Bucles) en C**
+- El ciclo **`for`** es fundamental para recorrer los arreglos y repetir bloques de código de manera eficiente. En este caso, se usa para leer y mostrar los elementos del arreglo, así como para realizar las comparaciones en el algoritmo de burbuja.
 
-**Peculiaridades**
+### 5. **Liberación de Memoria con `free`**
+- El manejo de memoria dinámica es crucial en C. La función `free` se usa para liberar la memoria que fue previamente asignada con `malloc`. Esto previene que el programa consuma memoria innecesariamente y previene **fugas de memoria**.
 
-- **Uso de Punteros:**
-  - En lugar de usar un arreglo estático, se utiliza un puntero para manejar un arreglo dinámico. Esto permite flexibilidad en el tamaño del arreglo.
+---
 
-- **Interacción con el Usuario:**
-  - Incluye interacciones básicas, como solicitudes de entrada y mensajes, mejorando la experiencia del usuario.
+### Ventajas y Limitaciones de la Implementación
 
-- **Manejo de Errores:**
-  - Se verifica que el número ingresado sea positivo, lo que añade robustez al programa.
+### Ventajas:
+- **Uso eficiente de memoria dinámica**: Usar `malloc` permite manejar arreglos cuyo tamaño se define en tiempo de ejecución, lo cual es útil cuando no se conoce el tamaño del arreglo previamente.
+- **Simplicidad en el algoritmo**: El código es fácil de entender y proporciona una implementación clara y directa del algoritmo de burbuja.
+- **Control sobre la memoria**: El uso de punteros y memoria dinámica da más control sobre el manejo de recursos en el sistema.
 
-- **Liberación de Memoria:**
-  - Al final del programa, se utiliza `free` para liberar la memoria asignada dinámicamente, evitando fugas de memoria.
+### Limitaciones:
+- **Ineficiencia del algoritmo**: El algoritmo de burbuja tiene una complejidad de \(O(n^2)\), lo que lo hace ineficiente para arreglos grandes. Existen algoritmos más rápidos, como el de ordenamiento rápido (quicksort) o el de mezcla (mergesort).
+- **Riesgo de fugas de memoria**: Si no se utiliza `free` correctamente, pueden ocurrir **fugas de memoria**, lo que puede hacer que el programa consuma más recursos de los necesarios.
 
-**Forma en C**
-
-La estructura del código en C se basa en su enfoque de programación procedural y en el manejo de memoria a través de punteros. A diferencia de C++, C no tiene clases ni objetos, lo que lleva a una implementación más directa y simple. El uso de funciones como `malloc` y `free` es fundamental para la gestión de memoria dinámica en C, y la simplicidad del lenguaje facilita la comprensión del algoritmo.
-
-### Pseudocódigo (Pseint)
+## Pseudocódigo (Pseint)
 
 ``` psc
 Algoritmo OrdenamientoBurbuja
