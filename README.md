@@ -52,15 +52,16 @@ La lista está completamente ordenada.
 - **Baja eficiencia**: En promedio y en el peor caso, tiene una complejidad de **O(n²)**, lo que la hace inadecuada para grandes volúmenes de datos.  
 - **No requiere memoria adicional**: Opera directamente sobre la lista original, sin necesidad de espacio extra.  
 
-## Ventajas y Desventajas
+## Ventajas y Desventajas  
+### Ventajas:  
+- **Sencillez de programación**: Su lógica es directa y requiere pocos pasos para codificarlo, lo que lo hace accesible incluso para principiantes.  
+- **Aplicabilidad limitada pero útil**: Es funcional para conjuntos de datos pequeños o como herramienta pedagógica para comprender los fundamentos de los algoritmos de ordenamiento.  
+- **Intuitivo**: Su funcionamiento es fácil de visualizar, ya que simula un proceso de "flotación" de elementos.  
 
-### Ventajas:
-- Fácil de implementar.
-- Útil para listas pequeñas o como introducción a los algoritmos de ordenamiento.
-
-### Desventajas:
-- Muy ineficiente para listas grandes.
-- Realiza muchas comparaciones e intercambios innecesarios en el peor de los casos.
+### Desventajas:  
+- **Baja eficiencia en grandes volúmenes**: Su complejidad temporal de **O(n²)** lo hace inadecuado para listas extensas, ya que el tiempo de ejecución crece de forma cuadrática con el tamaño de los datos.  
+- **Operaciones redundantes**: En el peor caso, realiza comparaciones y cambios innecesarios, incluso cuando la lista ya está parcialmente ordenada.  
+- **No optimizado para escenarios reales**: Su simplicidad se traduce en un rendimiento pobre frente a algoritmos más avanzados como QuickSort o MergeSort, especialmente en aplicaciones que manejan grandes cantidades de información.  
 
 # 💻 Implementaciones en Diferentes Lenguajes
 
@@ -110,49 +111,80 @@ int main() {
 }
 ``` 
 
-### 1. **Incluir las librerías necesarias**
-- `#include <iostream>`: Esta librería es necesaria para usar las funciones de entrada y salida, como `cin` y `cout`. Permite interactuar con el usuario, como leer datos desde el teclado o imprimir resultados en la consola.
-- `#include <vector>`: La librería `vector` nos permite usar un tipo de dato llamado **vector**, que es una estructura de datos dinámica en C++. Un vector es como un arreglo, pero con la ventaja de que su tamaño puede cambiar durante la ejecución del programa.
+### 1. **Librerías necesarias**  
+- **`#include <iostream>`**:  
+  Permite usar funciones de entrada/salida como `cin` (leer datos del usuario) y `cout` (mostrar resultados en la consola).  
+- **`#include <vector>`**:  
+  Facilita el uso de **vectores**, estructuras dinámicas que almacenan elementos y permiten ajustar su tamaño durante la ejecución.  
+- **`#include <algorithm>`** *(opcional pero recomendado)*:  
+  Contiene la función `std::swap()` para intercambiar valores. Aunque algunos compiladores la reconocen sin esta librería, incluirla garantiza compatibilidad.
 
-### 2. **Uso del espacio de nombres `std`**
-- `using namespace std;`:
-  - Esta línea permite evitar tener que escribir `std::` antes de las funciones o clases estándar de C++, como `cout`, `cin` y `vector`. Esto simplifica el código y lo hace más legible para los principiantes.
-
-### 3. **Definición de la función `burbuja`**
-- La función `burbuja` es el corazón del algoritmo de ordenamiento burbuja, que organiza los elementos de un vector en orden ascendente. Utiliza dos bucles anidados para comparar y, si es necesario, intercambiar los elementos adyacentes.
-
-### 4. **Función `main`**
-- En la función `main`, se lleva a cabo la interacción con el usuario para ingresar los números a ordenar. Además, se llama a la función `burbuja` para realizar el ordenamiento, y se muestra la lista antes y después de ordenarla.
-
+### 2. **Uso del espacio de nombres `std`**  
+- **`using namespace std;`**:  
+  Simplifica el código al evitar escribir `std::` antes de funciones como `cout`, `cin` o `vector`.  
+  *Nota:* En proyectos grandes, se prefiere evitar esta directiva para evitar conflictos de nombres.
+  
 ---
 
-### Conceptos Clave 
+### Conceptos Clave  
+#### 1. **Vectores en C++**  
+- **Dinamismo**: A diferencia de los arreglos estáticos, los vectores ajustan su tamaño automáticamente.  
+- **Métodos útiles**:  
+  - `size()`: Devuelve el número de elementos.  
+  - `push_back()`: Añade un elemento al final.  
+  - `at()`: Accede a un elemento con verificación de límites.  
 
-### 1. **Vectores en C++**
-- Un **vector** es un tipo de dato dinámico que puede almacenar una lista de elementos. Su tamaño puede cambiar durante la ejecución del programa.
-- Los vectores son más flexibles que los arreglos tradicionales, y son una opción recomendada cuando no sabemos el tamaño exacto de los datos con los que vamos a trabajar.
+#### 2. **Paso por Referencia**  
+- Al pasar el vector como `std::vector<int>&`, cualquier cambio dentro de la función afecta directamente al vector original. Esto es eficiente y evita copias innecesarias.  
 
-### 2. **Paso por Referencia**
-- Al usar el símbolo `&` en el parámetro de la función (`vector<int>& lista`), estamos pasando la referencia al vector. Esto significa que cualquier cambio que hagamos dentro de la función afectará al vector original que se pasó al llamar la función.
+#### 3. **Intercambio de Valores**  
+- **`std::swap(a, b)`**:  
+  Intercambia los valores de `a` y `b`. Es clave para el algoritmo de burbuja.  
 
-### 3. **Intercambio de Valores**
-- La función `swap()` intercambia dos valores. En este caso, intercambiamos elementos en el vector si están en el orden incorrecto.
-
-### 4. **Ciclos (Bucles)**
-- El ciclo `for` es una estructura de control que permite repetir un bloque de código varias veces. El bucle `for` en el código es utilizado tanto para leer los números como para ordenar la lista.
+#### 4. **Ciclos (Bucles)**  
+- **`for`**:  
+  - En `main`, se usa para leer datos del usuario.  
+  - En `burbuja`, se usa para comparar y ordenar elementos.  
+- **Optimización**:  
+  Se puede mejorar el algoritmo añadiendo una variable `bool` para detectar si se realizaron intercambios en una pasada, terminando el bucle si la lista ya está ordenada.  
 
 ---
 
 ### Ventajas y Limitaciones de la Implementación
 
-### Ventajas:
-- **Interactividad:** Permite al usuario ingresar los datos que quiere ordenar.
-- **Simplicidad:** Es fácil de entender y modificar para principiantes.
-- **Uso de estructuras modernas de C++:** El código aprovecha vectores y funciones estándar que simplifican su implementación.
+### **Ventajas**  
+1. **Interactividad con el usuario**  
+   - El programa permite que el usuario ingrese los datos a ordenar, lo que lo hace flexible y útil para casos prácticos.  
+   - La lectura de valores mediante `cin` y la visualización con `cout` facilitan la comprensión del flujo de datos.  
 
-### Limitaciones:
-- **Complejidad:** La complejidad del algoritmo burbuja es \(O(n^2)\), lo que lo hace lento para listas grandes.
-- **Faltan optimizaciones:** Se podrían agregar mejoras, como una verificación para detener el algoritmo si la lista ya está ordenada, lo que reduciría el tiempo de ejecución en algunos casos.
+2. **Simplicidad y accesibilidad**  
+   - La lógica del algoritmo es clara y directa, ideal para principiantes que aprenden a manejar estructuras de control como bucles y condicionales.  
+   - El código es fácil de modificar, por ejemplo, para cambiar el orden (ascendente/descendente) o agregar funcionalidades adicionales.  
+
+3. **Uso de estructuras modernas de C++**  
+   - **Vectores (`std::vector`)**: Permiten manejar listas dinámicas sin preocuparse por tamaños fijos, lo que es más práctico que los arreglos tradicionales.  
+   - **Funciones estándar**:  
+     - `std::swap()` para intercambiar elementos.  
+     - `push_back()` para agregar valores al vector.  
+     - `for` con rango (`for (int num : lista)`) para iterar de forma concisa.
+
+4. **Claridad del código**  
+   - La estructura modular (función `burbuja` separada de `main`) mejora la legibilidad y facilita la reutilización del algoritmo en otros proyectos.
+
+### **Limitaciones**  
+1. **Complejidad temporal elevada**  
+   - El algoritmo tiene una complejidad de **O(n²)** en el peor y promedio de los casos, lo que lo hace ineficiente para listas grandes.  
+   - Ejemplo: Si se ordenan 1000 elementos, se realizarán aproximadamente **1,000,000 de operaciones**, lo que puede causar retrasos significativos.  
+
+2. **Falta de optimizaciones**  
+   - **No detecta listas ya ordenadas**: Incluso si la lista está parcialmente ordenada, el algoritmo completará todas las pasadas, realizando comparaciones innecesarias.  
+   - **Mejora posible**: Añadir una variable `bool` (por ejemplo, `intercambiado`) para verificar si hubo cambios en una pasada. Si no se realizaron intercambios, el algoritmo puede terminar anticipadamente.
+
+3. **Uso de memoria adicional (en algunos casos)**  
+   - Aunque el algoritmo es **in-place** (no requiere memoria extra significativa), en implementaciones no optimizadas se podrían generar copias innecesarias del vector.  
+
+4. **No es escalable**  
+   - Para aplicaciones reales con grandes volúmenes de datos, algoritmos como **QuickSort** o **MergeSort** (con complejidad **O(n log n)**) son preferibles.  
 
 ## Algoritmo en C
 
