@@ -29,30 +29,28 @@ El nombre "burbuja" proviene de la forma en que los elementos más grandes (o m�
 2. **Intercambio condicional**: Si el orden no es el deseado (por ejemplo, el primer elemento es mayor que el segundo en un orden ascendente), se intercambian sus posiciones.  
 3. **Iteración continua**: Este proceso se repite ciclicamente a lo largo de la lista hasta que no se requieran más intercambios, lo que indica que la lista está completamente ordenada.  
 
-## Ejemplo paso a paso
+## Ejemplo paso a paso  
+Supongamos que tienes la lista **[5, 3, 8, 2]** y deseas organizarla de menor a mayor. Aquí cómo se desarrolla el proceso:  
 
-Imagina que tienes la lista **[5, 3, 8, 2]** y quieres ordenarla en forma ascendente:
+### Primera iteración:  
+- **5 y 3**: Como 5 es mayor que 3, se intercambian. Resultado: **[3, 5, 8, 2]**.  
+- **5 y 8**: El orden es correcto, no se modifica. Resultado: **[3, 5, 8, 2]**.  
+- **8 y 2**: Al ser 8 mayor que 2, se cambian de lugar. Resultado: **[3, 5, 2, 8]**.  
+El número 8 ya está en su posición final.  
 
-### Primera pasada:
-- Compara 5 y 3. Como 5 > 3, los intercambias. Lista: **[3, 5, 8, 2]**  
-- Compara 5 y 8. Como 5 < 8, no haces nada. Lista: **[3, 5, 8, 2]**  
-- Compara 8 y 2. Como 8 > 2, los intercambias. Lista: **[3, 5, 2, 8]**  
-Ahora, el número 8 está en su lugar correcto.
+### Segunda iteración:  
+- **3 y 5**: No se intercambian, ya que 3 < 5. Resultado: **[3, 5, 2, 8]**.  
+- **5 y 2**: Se cambian porque 5 > 2. Resultado: **[3, 2, 5, 8]**.  
+El 5 ahora está en su lugar correcto.  
 
-### Segunda pasada:
-- Compara 3 y 5. Como 3 < 5, no haces nada. Lista: **[3, 5, 2, 8]**  
-- Compara 5 y 2. Como 5 > 2, los intercambias. Lista: **[3, 2, 5, 8]**  
-Ahora, el número 5 está en su lugar correcto.
+### Tercera iteración:  
+- **3 y 2**: Se intercambian al ser 3 > 2. Resultado final: **[2, 3, 5, 8]**.  
+La lista está completamente ordenada.  
 
-### Tercera pasada:
-- Compara 3 y 2. Como 3 > 2, los intercambias. Lista: **[2, 3, 5, 8]**  
-Ahora, la lista está completamente ordenada.
-
-## Características del algoritmo
-
-- **Simplicidad:** Es fácil de entender y programar.
-- **Eficiencia baja:** Su complejidad es \(O(n^2)\) en el peor y promedio de los casos, lo que significa que se vuelve lento para listas grandes.
-- **In-place:** No requiere memoria extra significativa, ya que se realiza directamente en la lista original.
+## Características del algoritmo  
+- **Fácil de comprender**: Su lógica es intuitiva y accesible para principiantes.  
+- **Baja eficiencia**: En promedio y en el peor caso, tiene una complejidad de **O(n²)**, lo que la hace inadecuada para grandes volúmenes de datos.  
+- **No requiere memoria adicional**: Opera directamente sobre la lista original, sin necesidad de espacio extra.  
 
 ## Ventajas y Desventajas
 
