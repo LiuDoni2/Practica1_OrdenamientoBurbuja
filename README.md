@@ -18,18 +18,16 @@
 
 ----
 
-## ❓ ¿Qué es el Algoritmo de Ordenamiento Burbuja?
+## ❓ ¿Qué es el Algoritmo de Ordenamiento Burbuja?  
+El **algoritmo de ordenamiento burbuja** es un enfoque sencillo para organizar una secuencia de elementos de manera ascendente o descendente. Aunque su rendimiento es limitado en conjuntos de datos grandes, resulta ideal para comprender los fundamentos de los algoritmos de ordenamiento.  
 
-El **algoritmo de ordenamiento burbuja** es uno de los métodos más básicos para organizar una lista de elementos en orden (ya sea ascendente o descendente). Aunque no es el más eficiente para listas grandes, es una excelente forma de aprender cómo funcionan los algoritmos de ordenamiento.
+## ¿Cómo funciona?  
+El nombre "burbuja" proviene de la forma en que los elementos más grandes (o más pequeños, según el criterio de ordenamiento) se desplazan progresivamente hacia el extremo opuesto de la lista, similar a cómo las burbujas ascienden a la superficie del agua.  
 
-## ¿Cómo funciona?
-
-El nombre "burbuja" se debe a que los valores más grandes (o más pequeños, dependiendo del caso) "flotan" hacia el final de la lista, como burbujas en el agua.
-
-### Pasos del algoritmo:
-1. Compara dos elementos adyacentes en la lista.
-2. Si están en el orden equivocado (por ejemplo, el primero es mayor que el segundo en un orden ascendente), intercámbialos.
-3. Repite este proceso para todos los elementos de la lista, una y otra vez, hasta que esté completamente ordenada.
+### Pasos del algoritmo:  
+1. **Comparación inicial**: Se analizan pares de elementos contiguos en la lista.  
+2. **Intercambio condicional**: Si el orden no es el deseado (por ejemplo, el primer elemento es mayor que el segundo en un orden ascendente), se intercambian sus posiciones.  
+3. **Iteración continua**: Este proceso se repite ciclicamente a lo largo de la lista hasta que no se requieran más intercambios, lo que indica que la lista está completamente ordenada.  
 
 ## Ejemplo paso a paso
 
